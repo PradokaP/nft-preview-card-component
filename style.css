@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Rock+3D&family=Vujahday+Script&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+:root{
+    /* ### Primary */
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+
+--mainBG: hsl(217, 54%, 11%);
+--cardBG: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+img{
+    max-width: 100%;
+}
+
+
+body{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    background-color: var(--mainBG);
+    color: hsl(0, 0%, 100%, 60%);
+    padding: 25px;
+}
+p, .days{
+    font-weight: 400;
+    color: hsl(0, 0%, 100%, 40%);
+    /* o último % é a opacidade da fonte */
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+b{
+    color: var(--white);
+}
+.conteudo{
+    max-width: 450px;
+    background-color: var(--cardBG);
+    padding: 25px 25px 5px 25px;
+    border-radius: 25px;
+    box-shadow: inset  0px 0px 9px var(--line) 
+    
+    
+}
+
+h2{
+    color: var(--white);
+    margin: 10px 5px 10px;
+}
+h2:hover{
+    color: var(--Cyan)
+}
+p{
+    margin: 10px 5px 10px;
+}
+
+tr, td{
+    text-align: left;
+    width: 600px;
+    margin: 10px 5px 10px;
+    
+
+}
+
+.foto{
+    margin: 20px 5px 10px;
+    height: 42px;
+    width: 42px;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+    
+}
+
+.days{
+    padding-left: 150px;
+}
+
+.ETH{
+    font-weight: 500;
+    color:var(--Cyan);
+}
+
+.foto1{
+    border-radius: 15px;
+}
+
+b{
+    color: var(--white);
+}
+
+
+.criador{
+    text-align: center;
+    position: relative;
+    
+    bottom: 57px;
+    right: 30px;
+    
+}
+.caixa{
+    padding-bottom: 15px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: hsl(0, 0%, 100%, 40%);
+}
+
+@media (min-width:700px ){
+    .conteudo{
+        
+        margin: 50px auto 25px auto;
+
+        
+    }
+}
+
+@media(max-width:469px){
+    .criador{
+        font-size: 15px;
+        position: relative;
+        left: 0.5rem;
+
+    }
+}
+
+@media(max-width:375px){
+    .criador{
+        font-size: 12px;
+        position: relative;
+        left: 2px;
+
+    }
+}
+
